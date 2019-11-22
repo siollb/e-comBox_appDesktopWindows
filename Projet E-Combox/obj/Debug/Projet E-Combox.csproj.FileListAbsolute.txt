@@ -1,0 +1,122 @@
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.exe.config
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.exe
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.pdb
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csprojAssemblyReference.cache
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\MainWindow.g.cs
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\App.g.cs
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.cache
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.lref
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\MainWindow.baml
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.g.resources
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\Projet_E_Combox.Properties.Resources.resources
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.GenerateResource.cache
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.CoreCompileInputs.cache
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.exe
+C:\Users\Jean-Eric Mommeja\source\repos\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.pdb
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.exe.config
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.exe
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.pdb
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csprojAssemblyReference.cache
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\MainWindow.g.cs
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\App.g.cs
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.cache
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.lref
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\MainWindow.baml
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.g.resources
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet_E_Combox.Properties.Resources.resources
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.GenerateResource.cache
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.CoreCompileInputs.cache
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.exe
+C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.pdb
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.exe.config
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.exe
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.pdb
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignColors.dll
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csprojAssemblyReference.cache
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\MainWindow.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\App.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.cache
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.lref
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\App.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\MainWindow.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.g.resources
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet_E_Combox.Properties.Resources.resources
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.GenerateResource.cache
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.CoreCompileInputs.cache
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.CopyComplete
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.exe
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.pdb
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Page1.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Page1.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Page2.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Page3.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Page2.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox\Projet E-Combox\obj\Debug\Page3.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csprojAssemblyReference.cache
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\MainWindow.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Page1.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Page2.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Page3.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\App.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.cache
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.lref
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.exe
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.pdb
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.exe.config
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.exe
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.pdb
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignColors.dll
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\App.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\MainWindow.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Page1.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Page2.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Page3.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.g.resources
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Projet_E_Combox.Properties.Resources.resources
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.GenerateResource.cache
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.CoreCompileInputs.cache
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.CopyComplete
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\page4.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\page5.g.cs
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\page4.baml
+C:\Users\Jean-Eric Mommeja\Desktop\Projet E-Combox 2\Projet E-Combox\Projet E-Combox\obj\Debug\page5.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.exe.config
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.exe
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\bin\Debug\Projet E-Combox.pdb
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignColors.dll
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignColors.pdb
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csprojAssemblyReference.cache
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\MainWindow.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Page1.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Page2.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Page3.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Page4.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Page5.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\App.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.cache
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.lref
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\App.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\MainWindow.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Page1.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Page2.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Page3.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Page4.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Page5.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.g.resources
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet_E_Combox.Properties.Resources.resources
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.GenerateResource.cache
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.CoreCompileInputs.cache
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.CopyComplete
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.exe
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.pdb
