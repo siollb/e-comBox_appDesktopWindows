@@ -120,3 +120,34 @@ C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combo
 C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.CopyComplete
 C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.exe
 C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\Projet E-Combox\Projet E-Combox\obj\Debug\Projet E-Combox.pdb
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\bin\Debug\Projet E-Combox.exe.config
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\bin\Debug\Projet E-Combox.exe
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\bin\Debug\Projet E-Combox.pdb
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\bin\Debug\MaterialDesignColors.dll
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\bin\Debug\MaterialDesignColors.pdb
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Projet E-Combox.csprojAssemblyReference.cache
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\MainWindow.g.cs
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Page1.g.cs
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Page2.g.cs
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Page3.g.cs
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Page4.g.cs
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Page5.g.cs
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\App.g.cs
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.cache
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Projet E-Combox_MarkupCompile.lref
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\App.baml
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\MainWindow.baml
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Page1.baml
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Page2.baml
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Page3.baml
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Page4.baml
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Page5.baml
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Projet E-Combox.g.resources
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Projet_E_Combox.Properties.Resources.resources
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.GenerateResource.cache
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Projet E-Combox.csproj.CopyComplete
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Projet E-Combox.exe
+C:\Users\chris\Source\Repos\e-comBox_appDesktopWindows\Projet E-Combox\obj\Debug\Projet E-Combox.pdb

@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="e_combox_appDesktopWindows.e_comBox.EcomBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:e_combox_appDesktopWindows.e_comBox"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Background="{DynamicResource MaterialDesignPaper}"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="620">
+    <StackPanel Orientation="Vertical" Width="400" VerticalAlignment="Center">
+        <Button Height="60" Name="Button_Start"
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    Margin="2,10" >
+            <StackPanel Orientation="Horizontal" Width="350">
+                <Image Source="../Images/power-off.png" Width="50" Height="50"/>
+                <TextBlock Text="Démarrer e-comBox" VerticalAlignment="Center" Margin="30 0 0 0"/>
+            </StackPanel>
+        </Button>
+
+        <Button Height="60" Name="Button_Renew"
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    Margin="2,10">
+            <StackPanel Orientation="Horizontal" Width="350">
+                <Image Source="../Images/updated.png" Width="50" Height="50"/>
+                <TextBlock Text="Réinitialiser l'environnement" VerticalAlignment="Center" Margin="30 0 0 0"/>
+            </StackPanel>
+        </Button>
+
+        <Button Height="60" Name="Button_Configure"
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    Margin="2,10" Click="Button_Configure_Click" >
+            <StackPanel Orientation="Horizontal" Width="350">
+                <Image Source="../Images/wrench.png" Width="50" Height="50"/>
+                <TextBlock Text="Vérifier et configurer" VerticalAlignment="Center" Margin="30 0 0 0"/>
+            </StackPanel>
+        </Button>
+
+    </StackPanel>
+</UserControl>

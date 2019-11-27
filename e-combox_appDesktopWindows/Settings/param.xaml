@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="e_combox_appDesktopWindows.S_etting.param"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:e_combox_appDesktopWindows.S_etting"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Background="{DynamicResource MaterialDesignPaper}"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="620">
+    <StackPanel Orientation="Vertical" Width="400" VerticalAlignment="Center">
+        <Button Height="60" Name="Button_delete"
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    Margin="2,10" >
+            <StackPanel Orientation="Horizontal" Width="350">
+                <Image Source="../Images/delete.png" Width="50" Height="50"/>
+                <TextBlock VerticalAlignment="Center" Margin="30 0 0 0"><Run Text="Désinstalle"/><Run Text="r"/><Run Text=" e-comBox"/></TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button Height="60" Name="Button_update"
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    Margin="2,10" >
+            <StackPanel Orientation="Horizontal" Width="350">
+                <materialDesign:PackIcon Kind="DownloadOutline" Height="50" Width="50" Foreground="#72D5E8"/>
+                <TextBlock VerticalAlignment="Center" Margin="30 0 0 0"><Run Text="Mise "/><Run Text="à"/><Run Text=" jour d'e-comBox"/></TextBlock>
+            </StackPanel>
+        </Button>
+    </StackPanel>
+</UserControl>
