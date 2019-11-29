@@ -11,7 +11,7 @@
         xmlns:ab="clr-namespace:e_combox_appDesktopWindows.A_bout"
         xmlns:se="clr-namespace:e_combox_appDesktopWindows.S_etting"
         mc:Ignorable="d"
-        Title="e-comBox" Height="470" Width="620" Icon="Images/logo_ecomboxV5.png">
+        Title="e-comBox" Height="500" Width="620" Icon="Images/logo_ecomboxV5.png">
 
     <dragablz:TabablzControl SelectionChanged="TabablzControl_SelectionChanged">
         <dragablz:TabablzControl.InterTabController >

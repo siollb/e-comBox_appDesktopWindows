@@ -12,29 +12,38 @@
     <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="30,25,30,31" Height="294">
 
         <StackPanel Orientation="Horizontal" Width="350">
-            <materialDesign:PackIcon Kind="FileDocument" Width="50" Height="50" Foreground="#FF72D5E8" />
-            <Button x:Name="Button_utilisateur" Content="Lien vers la documentation utilisateur&#xD;&#xA;" Width="286" BorderBrush="White" BorderThickness="100" Click="Button_Click"/>
+            <materialDesign:PackIcon Kind="FileDocument" Width="40" Height="40" Foreground="#FF72D5E8" />
+            <Button x:Name="Button_utilisateur" Content="Lien vers la documentation utilisateur&#xA;" Width="238" BorderBrush="White" Click="Button_Click2" BorderThickness="1000" FontSize="12"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Width="350">
-            <materialDesign:PackIcon Kind="FileDocument" Width="50" Height="50" Foreground="#FC8394" />
-            <TextBlock Text="Lien vers la documentation administrateur" VerticalAlignment="Center" Margin="30 0 0 0"/>
+            <materialDesign:PackIcon Kind="FileDocument" Width="40" Height="40" Foreground="#FC8394" />
+            <Button Content="Lien vers la documetation administrateur " Width="256" BorderBrush="White"  Click="Button_Click3" BorderThickness="1000" FontSize="12"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Margin="1,10,0,0" Height="50">
-            <TextBox x:Name="textBoxEmail" Height="23" TextWrapping="Wrap" Text="Email"  Width="144"/>
-            <TextBox x:Name="textBoxObjet" Height="23" TextWrapping="Wrap" Text="Objet"  Width="144" Margin="55,0,0,0"/>
+        <StackPanel Orientation="Horizontal" Margin="0,30,0,0" Height="50">
+
+            <TextBox x:Name="textBoxEmail"
+              materialDesign:HintAssist.Hint="Entrer votre Email"
+              Text="{Binding Content}"
+              Margin="0 0 0 10"
+              VerticalAlignment="Bottom" Width="144" />
+            <TextBox x:Name="textBoxObjet" materialDesign:HintAssist.Hint="Objet"
+              Text="{Binding Content}"
+              Margin="55 0 0 10"
+              VerticalAlignment="Bottom" Width="144"/>
         </StackPanel>
         <StackPanel  Orientation="Horizontal" Height="50">
-            <TextBox x:Name="textBoxMessage" Height="40" TextWrapping="Wrap" Text="Message" Width="550"/>
+            <TextBox x:Name="textBoxMessage"  materialDesign:HintAssist.Hint="Message"
+              Text="{Binding Content}"
+              Margin="0 0 0 10"
+              VerticalAlignment="Bottom" Width="500"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Height="50">
-            <TextBox x:Name="textBoxPassword" Height="40" TextWrapping="Wrap" Text="Mot de passe de votre boite mail" Margin="0,0,299,0"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Height="35">
-            <Button
+        <StackPanel Orientation="Horizontal" Height="35" Margin="0,0,10,0">
+            <Button x:Name="Button_Mail"
     Style="{StaticResource MaterialDesignFlatMidBgButton}"
-    ToolTip="MaterialDesignFlatMidButton" Height="31" Margin="450,0,0,0" Width="100" Background="#FF72D5E8" Content="Envoyer" Foreground="White" Click="Button_Click"/>
+    ToolTip="MaterialDesignFlatMidButton" Height="31" Margin="430,2,0,2" Width="87" Background="#FF72D5E8" Content="Envoyer" Foreground="White" Click="Button_Click"/>
         </StackPanel>
 
     </StackPanel>
+
 </UserControl>

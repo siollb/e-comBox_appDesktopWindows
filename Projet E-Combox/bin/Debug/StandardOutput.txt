@@ -1,6 +1,0 @@
-Windows PowerShell
-Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
-
-Testez le nouveau systŠme multiplateforme PowerShell https://aka.ms/pscore6
-
-PS C:\Users\btssio1\Desktop\Projet E-Combox\Projet E-Combox\bin\Debug> 

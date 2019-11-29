@@ -26,5 +26,9 @@ namespace e_combox_appDesktopWindows.A_bout
             InitializeComponent();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {            
+                Process.Start("https://creativecommons.org/licenses/by-nc-sa/2.0/fr/");
+        }
     }
 }
