@@ -8,20 +8,20 @@
              Background="{DynamicResource MaterialDesignPaper}"
              TextElement.Foreground="{DynamicResource MaterialDesignBody}"
              mc:Ignorable="d" 
-             d:DesignHeight="350" d:DesignWidth="620">
+             d:DesignHeight="350" d:DesignWidth="620" Loaded="UserControl_Loaded">
     <StackPanel Orientation="Vertical" Width="400" VerticalAlignment="Center">
         <Button Height="60" Name="Button_Start"
     Style="{StaticResource MaterialDesignRaisedButton}"
-    Margin="2,10" >
+    Margin="2,10" Click="Button_Start_Click" >
             <StackPanel Orientation="Horizontal" Width="350">
-                <Image Source="../Images/power-off.png" Width="50" Height="50"/>
+                <Image x:Name="imgON" Source="../Images/power-off.png" Width="50" Height="50" OpacityMask="White"/>
                 <TextBlock Text="Démarrer e-comBox" VerticalAlignment="Center" Margin="30 0 0 0"/>
             </StackPanel>
         </Button>
 
         <Button Height="60" Name="Button_Renew"
     Style="{StaticResource MaterialDesignRaisedButton}"
-    Margin="2,10">
+    Margin="2,10" Click="Button_Renew_Click">
             <StackPanel Orientation="Horizontal" Width="350">
                 <Image Source="../Images/updated.png" Width="50" Height="50"/>
                 <TextBlock Text="Réinitialiser l'environnement" VerticalAlignment="Center" Margin="30 0 0 0"/>
@@ -36,6 +36,7 @@
                 <TextBlock Text="Vérifier et configurer" VerticalAlignment="Center" Margin="30 0 0 0"/>
             </StackPanel>
         </Button>
+        <Label x:Name="test" Content="Label"/>
 
     </StackPanel>
 </UserControl>

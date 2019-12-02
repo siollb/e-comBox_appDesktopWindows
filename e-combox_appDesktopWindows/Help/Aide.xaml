@@ -26,7 +26,7 @@
               materialDesign:HintAssist.Hint="Entrer votre Email"
               Text="{Binding Content}"
               Margin="0 0 0 10"
-              VerticalAlignment="Bottom" Width="144" />
+              VerticalAlignment="Bottom" Width="144" CaretBrush="#FF0071FF" />
             <TextBox x:Name="textBoxObjet" materialDesign:HintAssist.Hint="Objet"
               Text="{Binding Content}"
               Margin="55 0 0 10"
