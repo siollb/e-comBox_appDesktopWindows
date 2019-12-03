@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Projet E-Combox",
-    "\\Projet E-Combox\\Images"
+    "\\e-combox_appDesktopWindows",
+    "\\e-combox_appDesktopWindows\\Help",
+    "\\e-combox_appDesktopWindows\\Settings"
   ],
-  "SelectedNode": "\\Projet E-Combox\\Page4.xaml",
+  "SelectedNode": "\\e-combox_appDesktopWindows.sln",
   "PreviewInSolutionExplorer": false
 }

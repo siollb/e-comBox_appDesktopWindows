@@ -60,3 +60,11 @@ C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\New_\e-comBox_appDesktopWindow
 C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\New_\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\About\about.baml
 C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\New_\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Settings\param.g.cs
 C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\New_\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Settings\param.baml
+C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\About\about.g.cs
+C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Docker\docker.g.cs
+C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Help\Aide.g.cs
+C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Settings\param.g.cs
+C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\About\about.baml
+C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Docker\docker.baml
+C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Help\Aide.baml
+C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Settings\param.baml

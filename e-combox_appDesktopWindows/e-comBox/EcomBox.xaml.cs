@@ -13,7 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.ServiceProcess;
+using e_combox_appDesktopWindows.Scripts;
+using MaterialDesignThemes.Wpf;
 
 namespace e_combox_appDesktopWindows.e_comBox
 {
@@ -22,92 +23,96 @@ namespace e_combox_appDesktopWindows.e_comBox
     /// </summary>
     public partial class EcomBox : UserControl
     {
-        //   string FichBat = string.Format(@"..\..\Scripts\");
-        string FichBat = string.Format(@"C:/Program Files/e-comBox/scripts/");
+        string scriptsDirectory = string.Format(@"..\..\Scripts\");
+        string imagesDirectory = string.Format(@"..\..\Images\");
+        bool ecomboxIsStarted = false;
+
         public EcomBox()
         {
             InitializeComponent();
         }
 
-
-        private void Button_Configure_Click(object sender, RoutedEventArgs e)
-        {
-            Process proc = null;
-            proc = new Process();
-            proc.StartInfo.WorkingDirectory = FichBat;
-            proc.StartInfo.FileName = "lanceScriptPS_configEnvironnement.bat";
-            proc.StartInfo.CreateNoWindow = true;
-            proc.Start();
-            proc.WaitForExit();
-            testdocker();
-            proc.Close();
-
-        }
-
-
         private void Button_Start_Click(object sender, RoutedEventArgs e)
         {
-
-            Process proc = null;
-            proc = new Process();
-            proc.StartInfo.WorkingDirectory = FichBat;
-            proc.StartInfo.FileName = "lanceScriptPS_lanceURL.bat";
-            proc.StartInfo.CreateNoWindow = true;
-            proc.Start();
-            proc.WaitForExit();
-            testdocker();
-            proc.Close();
+            this.pbLoading.Visibility = Visibility.Visible;
+            if(this.ecomboxIsStarted)
+            {
+                this.stopEcomBox();
+            } else
+            {
+                this.startEcomBox();
+            }
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            testdocker();
+            this.checkStatus();
         }
 
-        private void testdocker()
+        private async void startEcomBox()
         {
-            ServiceController sc = new ServiceController("com.docker.service");
+            PowerShellExecution pse = new PowerShellExecution();
+            string status = await pse.ExecuteShellScript(scriptsDirectory + "startApplication.ps1");
+            this.checkStatus();
+        }
 
-            switch (sc.Status)
+        private async void stopEcomBox()
+        {
+            PowerShellExecution pse = new PowerShellExecution();
+            string result = await pse.ExecuteShellScript(scriptsDirectory + "stopApplication.ps1");
+            this.checkStatus();
+        }
+
+        private async void checkStatus()
+        {
+            PowerShellExecution pse = new PowerShellExecution();
+            string status = await pse.ExecuteShellScript(scriptsDirectory + "checkEcomboxStatus.ps1");
+
+            if (status.Equals("Stopped"))
             {
-                case ServiceControllerStatus.Running:
-                    test.Content = "Running";
-                    break;
-                case ServiceControllerStatus.Stopped:
-                    test.Content = "Stopped";
-                    break;
-                case ServiceControllerStatus.Paused:
-                    test.Content = "Paused";
-                    break;
-                case ServiceControllerStatus.StopPending:
-                    test.Content = "Stopping";
-                    break;
-                case ServiceControllerStatus.StartPending:
-                    test.Content = "Starting";
-                    break;
-                default:
-                    test.Content = "Status Changing";
-                    break;
+                this.imgStart.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
+                this.txtStart.Text = "Démarrer e-comBox";
+                this.ecomboxIsStarted = false;
             }
-
-            sc.Stop();
+            else
+            {
+                this.imgStart.Source = new BitmapImage(new Uri(imagesDirectory + "power.png", UriKind.Relative));
+                this.txtStart.Text = "Stopper e-comBox";
+                this.ecomboxIsStarted = true;
+            }
+            this.pbLoading.Visibility = Visibility.Hidden;
         }
 
-        private void Button_Renew_Click(object sender, RoutedEventArgs e)
+        private async void Button_Renew_Click(object sender, RoutedEventArgs e)
         {
-            Process proc = null;
-            proc = new Process();
-            proc.StartInfo.WorkingDirectory = FichBat;
-            proc.StartInfo.FileName = "lanceScriptPS_restartApplication.bat";
-            proc.StartInfo.CreateNoWindow = true;
-            proc.Start();
-            proc.WaitForExit();
-            testdocker();
-            proc.Close();
+            PowerShellExecution pse = new PowerShellExecution();
+            string result = await pse.ExecuteShellScript(scriptsDirectory + "initialisationApplication.ps1");
+            this.checkStatus();
         }
 
+        private async void DialogHost_DialogOpened(object sender, DialogOpenedEventArgs eventArgs)
+        {
+            PowerShellExecution pse = new PowerShellExecution();
+            string result = await pse.ExecuteShellScript(scriptsDirectory + "test.ps1");
+            string message = "";
 
+            if(result.Length > 0)
+            {
+                message = "Vous disposez d'un proxy, veuillez configurer l'adresse ci-dessous dans les paramètres de Docker";
+            } else
+            {
+                message = "Vous ne disposez pas de proxy, veuillez modifier ce paramètre dans Docker, s'il était activé auparavant";
+            } 
+            var person = new Proxy
+            {
+                Address = result,
+                Message = message
+            };
+
+            this.dialogProgress.IsOpen = false;
+            
+            await this.dialogInfo.ShowDialog(person);
+        }
 
     }
-
 }
