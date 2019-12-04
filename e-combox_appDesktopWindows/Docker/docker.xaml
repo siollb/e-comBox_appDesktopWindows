@@ -9,13 +9,16 @@
              TextElement.Foreground="{DynamicResource MaterialDesignBody}"
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="620" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <FontWeight x:Key="FontWeight1">Normal</FontWeight>
+    </UserControl.Resources>
     <StackPanel Orientation="Vertical" Width="400" VerticalAlignment="Center">
         <Button Height="60" Name="Button_Start_Off"
     Style="{StaticResource MaterialDesignRaisedButton}"
     Margin="2,10" Click="Button_Start_Off_Click" >
             <StackPanel Orientation="Horizontal" Width="350">
                 <Image Source="../Images/power-off.png" Width="50" Height="50" Name="imgStartOff"/>
-                <TextBlock VerticalAlignment="Center" Margin="30 0 0 0" Name="txtStartOff">Démarrer Docker</TextBlock>
+                <TextBlock VerticalAlignment="Center" Margin="30 0 0 0" Name="txtStartOff">État de Docker</TextBlock>
             </StackPanel>
         </Button>
 
@@ -27,15 +30,14 @@
                 <TextBlock Text="Relancer Docker" VerticalAlignment="Center" Margin="30 0 0 0"/>
             </StackPanel>
         </Button>
-
-        <Button Height="60" Name="Button_infoDocker"
-    Style="{StaticResource MaterialDesignRaisedButton}"
-    Margin="2,10">
-            <StackPanel Orientation="Horizontal" Width="350">
-                <materialDesign:PackIcon Kind="InfoVariant" Height="50" Width="50" Grid.Row="1" Foreground="#FF1252FB" />
-                <TextBlock Text="Information sur Docker" VerticalAlignment="Center" Margin="30 0 0 0"/>
-            </StackPanel>
-        </Button>
+        <StackPanel Orientation="Horizontal" Width="350" Margin="0,15,50,0">
+            <ProgressBar Height="20" Width="150" Background="#FF72D5E8" BorderBrush="#FF72D5E8" Foreground="#FFFC8394"/>
+            <TextBlock Text="Mémoire utilisée" VerticalAlignment="Center" Margin="30 0 0 0" Foreground="Black" FontSize="14" FontWeight="Bold"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Width="350" Margin="0,15,50,0">
+            <ProgressBar Height="20" Width="150" Background="#FFFC8394" BorderBrush="#FFFC8394" Foreground="#FF72D5E8"/>
+            <TextBlock VerticalAlignment="Center" Margin="30 0 0 0" Name="txtStockageDocker" FontSize="14" FontWeight="Bold" Foreground="Black">Espace de stokage utilisé</TextBlock>
+        </StackPanel>
 
     </StackPanel>
 </UserControl>

@@ -30,7 +30,7 @@ namespace e_combox_appDesktopWindows.H_elp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MailMessage msg = new MailMessage("e-combox@gmail.com", "technicien@gmail.com", textBoxObjet.Text, (textBoxMessage.Text + " Envoyer par : " + textBoxEmail.Text));
+            MailMessage msg = new MailMessage("support@e-combox.com", "support@e-combox.com", textBoxObjet.Text, (textBoxMessage.Text + " Envoyer par : " + textBoxEmail.Text));
             msg.IsBodyHtml = true;
             SmtpClient sc = new SmtpClient("smtp.gmail.com", 587);
             sc.UseDefaultCredentials = false;

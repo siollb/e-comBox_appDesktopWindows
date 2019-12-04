@@ -71,17 +71,6 @@
                                      Foreground="#53C8DF"/>
                     </StackPanel>
                 </materialDesign:DialogHost.DialogContent>
-                <Button Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"
-                    Height="60" Name="Button_Configure"
-                    Style="{StaticResource MaterialDesignRaisedButton}"
-                    IsEnabled="True"
-                        Margin="2,10"
-                        >
-                    <StackPanel Orientation="Horizontal" Width="350">
-                        <Image Source="../Images/wrench.png" Width="50" Height="50"/>
-                        <TextBlock Text="Vérifier et configurer" VerticalAlignment="Center" Margin="30 0 0 0"/>
-                    </StackPanel>
-                </Button>
             </materialDesign:DialogHost>
 
         </StackPanel>

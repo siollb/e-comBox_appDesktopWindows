@@ -68,3 +68,38 @@ C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindow
 C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Docker\docker.baml
 C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Help\Aide.baml
 C:\Users\chris\source\repos\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Settings\param.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\e-combox_appDesktopWindows.exe.config
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\e-combox_appDesktopWindows.exe
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\e-combox_appDesktopWindows.pdb
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\Dragablz.dll
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\MaterialDesignColors.dll
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\Dragablz.pdb
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\Dragablz.xml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\MaterialDesignColors.pdb
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e-combox_appDesktopWindows.csprojAssemblyReference.cache
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\About\about.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Docker\docker.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e-comBox\EcomBox.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Help\Aide.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\MainWindow.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Settings\param.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\App.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e-combox_appDesktopWindows_MarkupCompile.cache
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e-combox_appDesktopWindows_MarkupCompile.lref
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\App.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\About\about.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Docker\docker.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e-comBox\EcomBox.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Help\Aide.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\MainWindow.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\Settings\param.baml
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e-combox_appDesktopWindows.g.resources
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e_combox_appDesktopWindows.Properties.Resources.resources
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e-combox_appDesktopWindows.csproj.GenerateResource.cache
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e-combox_appDesktopWindows.csproj.CopyComplete
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e-combox_appDesktopWindows.exe
+C:\Users\rutil\Documents\Rutily Léa\PPE_mission3\e-comBox_appDesktopWindows\e-combox_appDesktopWindows\obj\Debug\e-combox_appDesktopWindows.pdb

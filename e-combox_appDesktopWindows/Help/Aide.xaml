@@ -18,9 +18,10 @@
 
         <StackPanel Orientation="Horizontal" Width="350">
             <materialDesign:PackIcon Kind="FileDocument" Width="40" Height="40" Foreground="#FC8394" />
-            <Button Content="Lien vers la documetation administrateur " Width="256" BorderBrush="White"  Click="Button_Click3" BorderThickness="1000" FontSize="12"/>
+            <Button Content="Lien vers la documentation administrateur " Width="269" BorderBrush="White"  Click="Button_Click3" BorderThickness="1000" FontSize="12"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Margin="0,30,0,0" Height="50">
+        <Label Content="En cas de problème contacter nous ici :" Margin="0,30,0,0" FontWeight="Bold"/>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,0" Height="50">
 
             <TextBox x:Name="textBoxEmail"
               materialDesign:HintAssist.Hint="Entrer votre Email"
@@ -32,11 +33,15 @@
               Margin="55 0 0 10"
               VerticalAlignment="Bottom" Width="144"/>
         </StackPanel>
-        <StackPanel  Orientation="Horizontal" Height="50">
-            <TextBox x:Name="textBoxMessage"  materialDesign:HintAssist.Hint="Message"
-              Text="{Binding Content}"
-              Margin="0 0 0 10"
-              VerticalAlignment="Bottom" Width="500"/>
+        <StackPanel  Orientation="Horizontal" Height="50" Margin="0,0,152,0">
+            <TextBox x:Name="textBoxMessage"
+                        TextWrapping="Wrap"
+                        VerticalAlignment="Stretch"
+                        MinWidth="280"
+                        AcceptsReturn="True"
+                        VerticalScrollBarVisibility="Auto"
+                        SpellCheck.IsEnabled="True"
+                        materialDesign:HintAssist.Hint="Message" Width="408"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Height="35" Margin="0,0,10,0">
             <Button x:Name="Button_Mail"
