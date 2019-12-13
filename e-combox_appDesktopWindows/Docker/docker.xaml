@@ -38,6 +38,9 @@
             <ProgressBar Height="20" Width="150" Background="#FFFC8394" BorderBrush="#FFFC8394" Foreground="#FF72D5E8"/>
             <TextBlock VerticalAlignment="Center" Margin="30 0 0 0" Name="txtStockageDocker" FontSize="14" FontWeight="Bold" Foreground="Black">Espace de stokage utilisé</TextBlock>
         </StackPanel>
-
+        <StackPanel Orientation="Horizontal" Width="350" Margin="0,15,50,0">
+            <ProgressBar Height="20" Width="150" Background="#FF111217" BorderBrush="#FF111217" Foreground="#FF72D5E8"/>
+            <TextBlock VerticalAlignment="Center" Margin="30 0 0 0" Name="txtProcesseurDocker" FontSize="14" FontWeight="Bold" Foreground="Black">Processeur utilisé</TextBlock>
+        </StackPanel>
     </StackPanel>
 </UserControl>
