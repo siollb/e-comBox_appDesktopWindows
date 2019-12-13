@@ -30,6 +30,7 @@ namespace e_combox_appDesktopWindows.e_comBox
         public EcomBox()
         {
             InitializeComponent();
+            checkStatus();
         }
 
         private void Button_Start_Click(object sender, RoutedEventArgs e)
@@ -67,9 +68,10 @@ namespace e_combox_appDesktopWindows.e_comBox
         {
             PowerShellExecution pse = new PowerShellExecution();
             string status = await pse.ExecuteShellScript(scriptsDirectory + "checkEcomboxStatus.ps1");
-
-            if (status.Equals("Stopped"))
+            Console.WriteLine("test" + status);
+            if (status.Contains("Stopped"))
             {
+      
                 this.imgStart.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
                 this.txtStart.Text = "Démarrer e-comBox";
                 this.ecomboxIsStarted = false;
