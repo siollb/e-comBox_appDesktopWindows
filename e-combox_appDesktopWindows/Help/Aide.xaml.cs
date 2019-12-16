@@ -30,11 +30,11 @@ namespace e_combox_appDesktopWindows.H_elp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MailMessage msg = new MailMessage("support@e-combox.com", "support@e-combox.com", textBoxObjet.Text, (textBoxMessage.Text + " Envoyer par : " + textBoxEmail.Text));
+            MailMessage msg = new MailMessage("app_desktop@llb.fr", "contact-ecombox@llb.fr", textBoxObjet.Text, (textBoxMessage.Text + " Envoyer par : " + textBoxEmail.Text));
             msg.IsBodyHtml = true;
             SmtpClient sc = new SmtpClient("smtp.gmail.com", 587);
             sc.UseDefaultCredentials = false;
-            NetworkCredential cre = new NetworkCredential("e-combox@gmail.com", "mot de passe mail e-combox");//your mail password
+            NetworkCredential cre = new NetworkCredential("app_desktop@llb.fr", "mot de passe mail e-combox");//your mail password
             sc.Credentials = cre;
             sc.EnableSsl = true;
             sc.Send(msg);

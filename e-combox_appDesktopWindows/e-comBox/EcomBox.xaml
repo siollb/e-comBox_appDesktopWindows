@@ -22,7 +22,8 @@
             Width="30"
             Foreground="#53C8DF"
             Margin="0,5,2,0"
-            Name="pbLoading"/>
+            Name="pbLoading"
+        />
 
 
         <materialDesign:DialogHost CloseOnClickAway="True" Name="dialogInfo"

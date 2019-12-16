@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Diagnostics;
 using System.ServiceProcess;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
+using e_combox_appDesktopWindows.Scripts;
+using MaterialDesignThemes.Wpf;
 
 namespace e_combox_appDesktopWindows.D_ocker
 {
@@ -14,6 +17,7 @@ namespace e_combox_appDesktopWindows.D_ocker
 
         string scriptsDirectory = string.Format(@"..\..\Scripts\");
         string imagesDirectory = string.Format(@"..\..\Images\");
+        bool ecomboxIsStarted = false;
 
         public docker()
         {
@@ -25,13 +29,25 @@ namespace e_combox_appDesktopWindows.D_ocker
             //A tester
             ServiceController sc = new ServiceController("com.docker.service");
 
-            if (sc != null || sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
+            if ( sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
             {
-                sc.Stop();
+                Process proc = null;
+                proc = new Process();
+                proc.StartInfo.WorkingDirectory = scriptsDirectory;
+                proc.StartInfo.FileName = "Launcher.bat";
+                proc.StartInfo.CreateNoWindow = false;
+                proc.Start();
+                proc.WaitForExit();
+
+                proc.Close();
+
+                MessageBox.Show("Docker à été arrêter");
+                this.checkStatus();
             }
             else
             {
-                sc.Start();
+                Process.Start("C:/Program Files/Docker/Docker/Docker Desktop.exe");
+                this.checkStatus();
             }
         }
 
@@ -40,7 +56,7 @@ namespace e_combox_appDesktopWindows.D_ocker
             ServiceController sc = new ServiceController("com.docker.service");
 
             //TODO déplacer dans une métode qui prend le statut en paramètre
-            if (sc != null || sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
+            if ( sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
             {
                 imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power.png", UriKind.Relative));
                 txtStartOff.Text = "Stopper Docker";
@@ -49,6 +65,27 @@ namespace e_combox_appDesktopWindows.D_ocker
                 imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
                 txtStartOff.Text = "Démarrer Docker";
             }
+        }
+
+        private async void checkStatus()
+        {
+            PowerShellExecution pse = new PowerShellExecution();
+            string status = await pse.ExecuteShellScript(scriptsDirectory + "checkEcomboxStatus.ps1");
+            Console.WriteLine("test" + status);
+            if (status.Contains("Stopped"))
+            {
+
+                this.imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
+                this.txtStartOff.Text = "Démarrer docker";
+                this.ecomboxIsStarted = false;
+            }
+            else
+            {
+                this.imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power.png", UriKind.Relative));
+                this.txtStartOff.Text = "Stopper docker";
+                this.ecomboxIsStarted = true;
+            }
+            this.pbLoading.Visibility = Visibility.Hidden;
         }
     }
 }
