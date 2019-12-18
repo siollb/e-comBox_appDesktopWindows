@@ -78,7 +78,7 @@ namespace e_combox_appDesktopWindows.D_ocker
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-           /* ServiceController sc = new ServiceController("com.docker.service");
+            ServiceController sc = new ServiceController("com.docker.service");
 
             //TODO déplacer dans une métode qui prend le statut en paramètre
             if ( sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
@@ -89,7 +89,7 @@ namespace e_combox_appDesktopWindows.D_ocker
             {
                 imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
                 txtStartOff.Text = "Démarrer Docker";
-            }*/
+            }
         }
 
         private async void checkStatus()
