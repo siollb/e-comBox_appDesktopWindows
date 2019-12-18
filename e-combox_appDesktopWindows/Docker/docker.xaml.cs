@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.ServiceProcess;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using e_combox_appDesktopWindows.Scripts;
 using MaterialDesignThemes.Wpf;
@@ -14,7 +15,6 @@ namespace e_combox_appDesktopWindows.D_ocker
     /// </summary>
     public partial class docker : UserControl
     {
-
         string scriptsDirectory = string.Format(@"..\..\Scripts\");
         string imagesDirectory = string.Format(@"..\..\Images\");
         bool ecomboxIsStarted = false;
@@ -22,8 +22,33 @@ namespace e_combox_appDesktopWindows.D_ocker
         public docker()
         {
             InitializeComponent();
+
+            ProgressBarMemoire.Value = 90;
+            ChangeColor(ProgressBarMemoire);
+
+            ProgressBarStockage.Value = 20;
+            ChangeColor(ProgressBarStockage);
+
+            ProgressBarProcesseur.Value = 50;
+            ChangeColor(ProgressBarProcesseur);
         }
 
+        //La couleur change selon la valeur de la ProgressBar
+        public void ChangeColor(ProgressBar Progresbar)
+        {
+            if (Progresbar.Value <= 40)
+            {
+                System.Windows.Media.Brush brush = Progresbar.Foreground = new SolidColorBrush(Colors.Green);
+            } 
+            else if (Progresbar.Value <= 70)
+            {
+                System.Windows.Media.Brush brush = Progresbar.Foreground = new SolidColorBrush(Colors.Orange);
+            }
+            else
+            {
+                System.Windows.Media.Brush brush = Progresbar.Foreground = new SolidColorBrush(Colors.Red);
+            }
+        }
         private void Button_Start_Off_Click(object sender, RoutedEventArgs e)
         {
             //A tester
@@ -53,7 +78,7 @@ namespace e_combox_appDesktopWindows.D_ocker
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            ServiceController sc = new ServiceController("com.docker.service");
+           /* ServiceController sc = new ServiceController("com.docker.service");
 
             //TODO déplacer dans une métode qui prend le statut en paramètre
             if ( sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
@@ -64,7 +89,7 @@ namespace e_combox_appDesktopWindows.D_ocker
             {
                 imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
                 txtStartOff.Text = "Démarrer Docker";
-            }
+            }*/
         }
 
         private async void checkStatus()
