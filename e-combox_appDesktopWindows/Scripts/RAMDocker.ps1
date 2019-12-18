@@ -1,0 +1,1 @@
+﻿Get-CimInstance win32_physicalmemory | Format-Table Capacity -autosize

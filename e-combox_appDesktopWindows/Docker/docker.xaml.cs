@@ -15,14 +15,16 @@ namespace e_combox_appDesktopWindows.D_ocker
     /// </summary>
     public partial class docker : UserControl
     {
+
         string scriptsDirectory = string.Format(@"..\..\Scripts\");
         string imagesDirectory = string.Format(@"..\..\Images\");
         bool ecomboxIsStarted = false;
-
+        double statusRamDouble = 0;
         public docker()
         {
             InitializeComponent();
-
+            //CheckRam();
+            ProgressBarMemoire.Value = statusRamDouble;
             ProgressBarMemoire.Value = 90;
             ChangeColor(ProgressBarMemoire);
 
@@ -32,14 +34,14 @@ namespace e_combox_appDesktopWindows.D_ocker
             ProgressBarProcesseur.Value = 50;
             ChangeColor(ProgressBarProcesseur);
         }
-
+    
         //La couleur change selon la valeur de la ProgressBar
         public void ChangeColor(ProgressBar Progresbar)
         {
             if (Progresbar.Value <= 40)
             {
                 System.Windows.Media.Brush brush = Progresbar.Foreground = new SolidColorBrush(Colors.Green);
-            } 
+            }
             else if (Progresbar.Value <= 70)
             {
                 System.Windows.Media.Brush brush = Progresbar.Foreground = new SolidColorBrush(Colors.Orange);
@@ -49,6 +51,7 @@ namespace e_combox_appDesktopWindows.D_ocker
                 System.Windows.Media.Brush brush = Progresbar.Foreground = new SolidColorBrush(Colors.Red);
             }
         }
+
         private void Button_Start_Off_Click(object sender, RoutedEventArgs e)
         {
             //A tester
@@ -78,7 +81,7 @@ namespace e_combox_appDesktopWindows.D_ocker
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-           /* ServiceController sc = new ServiceController("com.docker.service");
+            ServiceController sc = new ServiceController("com.docker.service");
 
             //TODO déplacer dans une métode qui prend le statut en paramètre
             if ( sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
@@ -89,7 +92,7 @@ namespace e_combox_appDesktopWindows.D_ocker
             {
                 imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
                 txtStartOff.Text = "Démarrer Docker";
-            }*/
+            }
         }
 
         private async void checkStatus()
@@ -111,6 +114,25 @@ namespace e_combox_appDesktopWindows.D_ocker
                 this.ecomboxIsStarted = true;
             }
             this.pbLoading.Visibility = Visibility.Hidden;
+        }
+       /* private async void CheckRam()
+        {
+            PowerShellExecution pse = new PowerShellExecution();
+            string statusram = await pse.ExecuteShellScript(scriptsDirectory + "CheckRam.ps1");
+            Console.WriteLine("testram" + statusram.Substring(20));
+            statusRamDouble = Convert.ToDouble(statusram.Substring(20));
+        }*/
+        /*static void Main()
+        {
+            var pc = new PerformanceCounter("Mono Memory", "Total Physical Memory");
+            Console.WriteLine("Physical RAM (bytes): {0}", pc.RawValue);
+        }*/
+
+        private async void Button_Relancer_Click(object sender, RoutedEventArgs e)
+        {
+            PowerShellExecution pse = new PowerShellExecution();
+            string status = await pse.ExecuteShellScript(scriptsDirectory + "restartDocker.ps1");
+            this.checkStatus();
         }
     }
 }
