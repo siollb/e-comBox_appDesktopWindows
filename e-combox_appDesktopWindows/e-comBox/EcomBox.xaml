@@ -49,6 +49,17 @@
                 </StackPanel>
             </Button>
 
+            <TextBlock x:Name="txt_URL" FontSize="15"
+                       Margin="0 0 0 20"
+                       Visibility="Hidden">
+                Accéder à e-comBox : 
+                <Hyperlink
+                    Cursor="Hand"
+                    RequestNavigate="Hyperlink_OnRequestNavigate" 
+                    NavigateUri="https://localhost:8888">
+                    http://localhost:8888
+                </Hyperlink>
+            </TextBlock>
 
             <Button Height="60" Name="Button_Renew"
     Style="{StaticResource MaterialDesignRaisedButton}"

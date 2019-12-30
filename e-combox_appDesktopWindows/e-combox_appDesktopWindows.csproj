@@ -140,8 +140,36 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Scripts\activeHyperV.ps1" />
+    <None Include="Scripts\checkEcomBoxStatus.ps1" />
+    <None Include="Scripts\checkHyperV.ps1" />
     <None Include="Scripts\CheckRam.bat" />
+    <None Include="Scripts\CheckRam.ps1" />
+    <None Include="Scripts\configEnvironnement.ps1" />
+    <None Include="Scripts\configProxyDocker.ps1" />
     <None Include="Scripts\configure_application.bat" />
+    <None Include="Scripts\desactiveStartAutomatiqueDocker.ps1" />
+    <None Include="Scripts\DockerKill.ps1" />
+    <None Include="Scripts\downloadDocker.ps1" />
+    <None Include="Scripts\fichierTemoin.ps1" />
+    <None Include="Scripts\fichierTemoinBis.ps1" />
+    <None Include="Scripts\getDockerVersion.ps1" />
+    <None Include="Scripts\initialisationApplication.ps1" />
+    <None Include="Scripts\installDocker.ps1" />
+    <None Include="Scripts\installGit.ps1" />
+    <None Include="Scripts\installPortainer.ps1" />
+    <None Include="Scripts\lanceURL.ps1" />
+    <None Include="Scripts\Launcher.bat" />
+    <None Include="Scripts\RAMDocker.ps1" />
+    <None Include="Scripts\restartApplication.ps1" />
+    <None Include="Scripts\restartDocker.ps1" />
+    <None Include="Scripts\restartPortainer.ps1" />
+    <None Include="Scripts\startApplication.ps1" />
+    <None Include="Scripts\startPortainer.ps1" />
+    <None Include="Scripts\stopDocker.ps1" />
+    <None Include="Scripts\stopPortainer.ps1" />
+    <None Include="Scripts\test.ps1" />
+    <None Include="Scripts\verifDocker.ps1" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -18,7 +18,6 @@ namespace e_combox_appDesktopWindows.D_ocker
 
         string scriptsDirectory = string.Format(@"..\..\Scripts\");
         string imagesDirectory = string.Format(@"..\..\Images\");
-        bool ecomboxIsStarted = false;
         double statusRamDouble = 0;
         public docker()
         {
@@ -54,44 +53,60 @@ namespace e_combox_appDesktopWindows.D_ocker
 
         private void Button_Start_Off_Click(object sender, RoutedEventArgs e)
         {
-            //A tester
-            ServiceController sc = new ServiceController("com.docker.service");
-
-            if ( sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
+            try
             {
-                Process proc = null;
-                proc = new Process();
-                proc.StartInfo.WorkingDirectory = scriptsDirectory;
-                proc.StartInfo.FileName = "Launcher.bat";
-                proc.StartInfo.CreateNoWindow = false;
-                proc.Start();
-                proc.WaitForExit();
 
-                proc.Close();
+                //A tester
+                ServiceController sc = new ServiceController("com.docker.service");
 
-                MessageBox.Show("Docker à été arrêter");
-                this.checkStatus();
-            }
-            else
+                /*if (sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
+                {
+                    Process proc = null;
+                    proc = new Process();
+                    proc.StartInfo.WorkingDirectory = scriptsDirectory;
+                    proc.StartInfo.FileName = "Launcher.bat";
+                    proc.StartInfo.CreateNoWindow = false;
+                    proc.Start();
+                    proc.WaitForExit();
+
+                    proc.Close();
+
+                    MessageBox.Show("Docker à été arrêter");
+                    this.checkStatus();
+                }
+                else
+                {
+                    Process.Start("C:/Program Files/Docker/Docker/Docker Desktop.exe");
+                    this.checkStatus();
+                }*/
+            } 
+            catch (InvalidOperationException err)
             {
-                Process.Start("C:/Program Files/Docker/Docker/Docker Desktop.exe");
-                this.checkStatus();
+                Console.WriteLine("Docker non installe : " + err);
             }
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            ServiceController sc = new ServiceController("com.docker.service");
+            try
+            {
+                ServiceController sc = new ServiceController("com.docker.service");
 
-            //TODO déplacer dans une métode qui prend le statut en paramètre
-            if ( sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
+                //TODO déplacer dans une métode qui prend le statut en paramètre
+               /* if (sc.Status == ServiceControllerStatus.Running || sc.Status == ServiceControllerStatus.StartPending)
+                {
+                    imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power.png", UriKind.Relative));
+                    txtStartOff.Text = "Stopper Docker";
+                }
+                else
+                {
+                    imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
+                    txtStartOff.Text = "Démarrer Docker";
+                }*/
+            }
+            catch (InvalidOperationException err)
             {
-                imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power.png", UriKind.Relative));
-                txtStartOff.Text = "Stopper Docker";
-            } else
-            {
-                imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
-                txtStartOff.Text = "Démarrer Docker";
+                Console.WriteLine("Docker non installe : " + err);
             }
         }
 
@@ -100,7 +115,7 @@ namespace e_combox_appDesktopWindows.D_ocker
             PowerShellExecution pse = new PowerShellExecution();
             string status = await pse.ExecuteShellScript(scriptsDirectory + "checkEcomboxStatus.ps1");
             Console.WriteLine("test" + status);
-            if (status.Contains("Stopped"))
+            /*if (status.Contains("Stopped"))
             {
 
                 this.imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
@@ -112,7 +127,7 @@ namespace e_combox_appDesktopWindows.D_ocker
                 this.imgStartOff.Source = new BitmapImage(new Uri(imagesDirectory + "power.png", UriKind.Relative));
                 this.txtStartOff.Text = "Stopper docker";
                 this.ecomboxIsStarted = true;
-            }
+            }*/
             this.pbLoading.Visibility = Visibility.Hidden;
         }
        /* private async void CheckRam()
@@ -133,6 +148,13 @@ namespace e_combox_appDesktopWindows.D_ocker
             PowerShellExecution pse = new PowerShellExecution();
             string status = await pse.ExecuteShellScript(scriptsDirectory + "restartDocker.ps1");
             this.checkStatus();
+        }
+
+        private async void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            PowerShellExecution pse = new PowerShellExecution();
+            string status = await pse.ExecuteShellScript(scriptsDirectory + "getDockerVersion.ps1");
+            Console.WriteLine("Version de Docker : " + status);
         }
     }
 }
