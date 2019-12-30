@@ -50,21 +50,56 @@ namespace e_combox_appDesktopWindows.e_comBox
         {
             PowerShellExecution pse = new PowerShellExecution();
             string status = await pse.ExecuteShellScript(scriptsDirectory + "lanceURL.ps1");
-            this.checkStatus();
+            bool isStarted;
+            if(status.Contains("Started"))
+            {
+                isStarted = true;
+            } else
+            {
+                isStarted = false;
+            }
+            this.changeAppStatus(isStarted);
         }
 
         private async void stopEcomBox()
         {
             PowerShellExecution pse = new PowerShellExecution();
             string result = await pse.ExecuteShellScript(scriptsDirectory + "stopDocker.ps1");
-            this.checkStatus();
+            bool isStarted;
+            if (result.Contains("Started"))
+            {
+                isStarted = true;
+            }
+            else
+            {
+                isStarted = false;
+            }
+            this.changeAppStatus(isStarted);
         }
 
         private async void Button_Renew_Click(object sender, RoutedEventArgs e)
         {
             PowerShellExecution pse = new PowerShellExecution();
-            string result = await pse.ExecuteShellScript(scriptsDirectory + "initialisationApplication.ps1");
+            string result = await pse.ExecuteShellScript(scriptsDirectory + "configEnvironnement.ps1");
             this.checkStatus();
+        }
+
+        private void changeAppStatus(bool isStarted)
+        {
+            if (isStarted)
+            {
+                this.imgStart.Source = new BitmapImage(new Uri(imagesDirectory + "power.png", UriKind.Relative));
+                this.txtStart.Text = "Stopper e-comBox";
+                this.ecomboxIsStarted = true;
+                this.txt_URL.Visibility = Visibility.Visible;
+            } else
+            {
+                this.imgStart.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
+                this.txtStart.Text = "Démarrer e-comBox";
+                this.ecomboxIsStarted = false;
+                this.txt_URL.Visibility = Visibility.Hidden;
+            }
+            this.pbLoading.Visibility = Visibility.Hidden;
         }
 
         private async void checkStatus()
@@ -72,22 +107,16 @@ namespace e_combox_appDesktopWindows.e_comBox
             PowerShellExecution pse = new PowerShellExecution();
             string status = await pse.ExecuteShellScript(scriptsDirectory + "checkEcomboxStatus.ps1");
             Console.WriteLine("test" + status);
+            bool isStarted;
             if (status.Contains("Stopped"))
             {
-      
-                this.imgStart.Source = new BitmapImage(new Uri(imagesDirectory + "power-off.png", UriKind.Relative));
-                this.txtStart.Text = "Démarrer e-comBox";
-                this.ecomboxIsStarted = false;
-                this.txt_URL.Visibility = Visibility.Hidden;
+                isStarted = false;
             }
             else
             {
-                this.imgStart.Source = new BitmapImage(new Uri(imagesDirectory + "power.png", UriKind.Relative));
-                this.txtStart.Text = "Stopper e-comBox";
-                this.ecomboxIsStarted = true;
-                this.txt_URL.Visibility = Visibility.Visible;
+                isStarted = true;
             }
-            this.pbLoading.Visibility = Visibility.Hidden;
+            this.changeAppStatus(isStarted);
         }
 
         private async void DialogHost_DialogOpened(object sender, DialogOpenedEventArgs eventArgs)

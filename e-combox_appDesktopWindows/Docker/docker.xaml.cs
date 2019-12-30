@@ -4,9 +4,8 @@ using System.ServiceProcess;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using e_combox_appDesktopWindows.Scripts;
-using MaterialDesignThemes.Wpf;
+using System.Management;
 
 namespace e_combox_appDesktopWindows.D_ocker
 {
@@ -155,6 +154,24 @@ namespace e_combox_appDesktopWindows.D_ocker
             PowerShellExecution pse = new PowerShellExecution();
             string status = await pse.ExecuteShellScript(scriptsDirectory + "getDockerVersion.ps1");
             Console.WriteLine("Version de Docker : " + status);
+
+            Process currentProc = Process.GetProcessesByName("com.docker.service")[0];
+            long memoryUsed = currentProc.PrivateMemorySize64;
+            ObjectQuery wql = new ObjectQuery("SELECT * FROM Win32_OperatingSystem");
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher(wql);
+            ManagementObjectCollection results = searcher.Get();
+
+            foreach (ManagementObject result in results)
+            {
+                Console.WriteLine("Total Visible Memory: {0} KB", result["TotalVisibleMemorySize"]);
+                Console.WriteLine("Free Physical Memory: {0} KB", result["FreePhysicalMemory"]);
+                Console.WriteLine("Total Virtual Memory: {0} KB", result["TotalVirtualMemorySize"]);
+
+                Console.WriteLine("Free Virtual Memory: {0} KB", result["FreeVirtualMemory"]);
+            }
+
+            Console.WriteLine("Memory used by docker : " + memoryUsed);
+                //ProgressBarMemoire.Value = memoryUsed;
         }
     }
 }

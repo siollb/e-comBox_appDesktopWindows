@@ -36,8 +36,8 @@ $info_docker = (docker info)
 if ($info_docker -ilike "*error*") {      
      Write-Output "Docker n'est pas démarré. Le processus doit démarrer Docker avant de lancer l'application..." >> $pathlog\demarrerEcombox.log 
      Write-Output "" >> $pathlog\demarrerEcombox.log
-     Write-host "Le processus doit démarrer Docker avant de lancer l'application..."
-     write-host ""
+     #Write-host "Le processus doit démarrer Docker avant de lancer l'application..."
+     #write-host ""
      
      #Lancement de Docker en super admin
      
@@ -114,7 +114,7 @@ if ($info_docker -ilike "*error*") {
              if (($_ -ilike "*error during connect*") -or ($_ -ilike "*errors pretty printing info*")  -or ($_ -ilike "*Error running info command*"))
              {
                  Write-Output "$((Get-Date).ToString("HH:mm:ss")) -`t Docker Desktop n'a pas encore complètement démarré, il faut attendre." >> $pathlog\demarrerEcombox.log
-                 Write-host "$((Get-Date).ToString("HH:mm:ss")) -`t Docker Desktop n'a pas encore complètement démarré, il faut attendre."
+                 #Write-host "$((Get-Date).ToString("HH:mm:ss")) -`t Docker Desktop n'a pas encore complètement démarré, il faut attendre."
              }
              else
             {
@@ -132,8 +132,9 @@ if ($info_docker -ilike "*error*") {
      }
 
      Write-Output "$((Get-Date).ToString("HH:mm:ss")) - `t Docker a redémarré." >> $pathlog\demarrerEcombox.log
-     Write-host "$((Get-Date).ToString("HH:mm:ss")) - `t Docker a redémarré."
-     Write-host "$((Get-Date).ToString("HH:mm:ss")) - `t  L'application e-comBox va être lancée dans le navigateur."
+     #Write-host "$((Get-Date).ToString("HH:mm:ss")) - `t Docker a redémarré."
+     #Write-host "$((Get-Date).ToString("HH:mm:ss")) - `t  L'application e-comBox va être lancée dans le navigateur."
+	 Write-host "Started"
      Write-Output " `t L'application e-comBox va être lancée dans le navigateur." >> $pathlog\demarrerEcombox.log
      Write-Output "" >> $pathlog\demarrerEcombox.log 
 
